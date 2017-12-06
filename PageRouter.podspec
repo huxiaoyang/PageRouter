@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.name         = 'PageRouter'
   s.summary      = 'A page router with swift project'
-  s.version      = '0.0.1'
+  s.version      = '0.0.2'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'huxiaoyang' => 'yohuyang@iCloud.com' }
   s.homepage     = 'https://github.com/huxiaoyang/PageRouter'

@@ -17,7 +17,7 @@ import UIKit
 typealias Complated = ([String : Any]) -> Void
 
 
-final class PageProvider<target: ControllerConvertible> {
+public class PageProvider<target: ControllerConvertible> {
     
     let callback = "PageProvider.callback"
     
