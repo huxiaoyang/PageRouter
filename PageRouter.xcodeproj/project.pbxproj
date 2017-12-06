@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		EDA15CFE1FD7E7C300CF7A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15CFD1FD7E7C300CF7A77 /* AppDelegate.swift */; };
 		EDA15D001FD7E7C300CF7A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15CFF1FD7E7C300CF7A77 /* ViewController.swift */; };
-		EDA15D031FD7E7C300CF7A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA15D011FD7E7C300CF7A77 /* Main.storyboard */; };
 		EDA15D051FD7E7C300CF7A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA15D041FD7E7C300CF7A77 /* Assets.xcassets */; };
 		EDA15D081FD7E7C300CF7A77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA15D061FD7E7C300CF7A77 /* LaunchScreen.storyboard */; };
 		EDA15D121FD7E86B00CF7A77 /* PageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D101FD7E86B00CF7A77 /* PageRouter.swift */; };
 		EDA15D131FD7E86B00CF7A77 /* PageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D111FD7E86B00CF7A77 /* PageProvider.swift */; };
 		EDA15D151FD7E98400CF7A77 /* UIViewController+FindTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D141FD7E98400CF7A77 /* UIViewController+FindTop.swift */; };
+		EDA15D171FD7F23300CF7A77 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D161FD7F23300CF7A77 /* Router.swift */; };
+		EDA15D191FD7F3D500CF7A77 /* AAAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D181FD7F3D500CF7A77 /* AAAViewController.swift */; };
+		EDA15D1B1FD7F3E700CF7A77 /* BBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D1A1FD7F3E700CF7A77 /* BBBViewController.swift */; };
+		EDA15D1D1FD7F3EF00CF7A77 /* CCCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15D1C1FD7F3EF00CF7A77 /* CCCViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EDA15CFA1FD7E7C300CF7A77 /* PageRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA15CFD1FD7E7C300CF7A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA15CFF1FD7E7C300CF7A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EDA15D021FD7E7C300CF7A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA15D041FD7E7C300CF7A77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA15D071FD7E7C300CF7A77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDA15D091FD7E7C300CF7A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA15D101FD7E86B00CF7A77 /* PageRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageRouter.swift; sourceTree = "<group>"; };
 		EDA15D111FD7E86B00CF7A77 /* PageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageProvider.swift; sourceTree = "<group>"; };
 		EDA15D141FD7E98400CF7A77 /* UIViewController+FindTop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+FindTop.swift"; sourceTree = "<group>"; };
+		EDA15D161FD7F23300CF7A77 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EDA15D181FD7F3D500CF7A77 /* AAAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AAAViewController.swift; sourceTree = "<group>"; };
+		EDA15D1A1FD7F3E700CF7A77 /* BBBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBBViewController.swift; sourceTree = "<group>"; };
+		EDA15D1C1FD7F3EF00CF7A77 /* CCCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +69,10 @@
 				EDA15D0F1FD7E86B00CF7A77 /* Classes */,
 				EDA15CFD1FD7E7C300CF7A77 /* AppDelegate.swift */,
 				EDA15CFF1FD7E7C300CF7A77 /* ViewController.swift */,
-				EDA15D011FD7E7C300CF7A77 /* Main.storyboard */,
+				EDA15D161FD7F23300CF7A77 /* Router.swift */,
+				EDA15D181FD7F3D500CF7A77 /* AAAViewController.swift */,
+				EDA15D1A1FD7F3E700CF7A77 /* BBBViewController.swift */,
+				EDA15D1C1FD7F3EF00CF7A77 /* CCCViewController.swift */,
 				EDA15D041FD7E7C300CF7A77 /* Assets.xcassets */,
 				EDA15D061FD7E7C300CF7A77 /* LaunchScreen.storyboard */,
 				EDA15D091FD7E7C300CF7A77 /* Info.plist */,
@@ -142,7 +151,6 @@
 			files = (
 				EDA15D081FD7E7C300CF7A77 /* LaunchScreen.storyboard in Resources */,
 				EDA15D051FD7E7C300CF7A77 /* Assets.xcassets in Resources */,
-				EDA15D031FD7E7C300CF7A77 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,22 +164,18 @@
 				EDA15D121FD7E86B00CF7A77 /* PageRouter.swift in Sources */,
 				EDA15D131FD7E86B00CF7A77 /* PageProvider.swift in Sources */,
 				EDA15D001FD7E7C300CF7A77 /* ViewController.swift in Sources */,
+				EDA15D191FD7F3D500CF7A77 /* AAAViewController.swift in Sources */,
 				EDA15D151FD7E98400CF7A77 /* UIViewController+FindTop.swift in Sources */,
+				EDA15D171FD7F23300CF7A77 /* Router.swift in Sources */,
 				EDA15CFE1FD7E7C300CF7A77 /* AppDelegate.swift in Sources */,
+				EDA15D1B1FD7F3E700CF7A77 /* BBBViewController.swift in Sources */,
+				EDA15D1D1FD7F3EF00CF7A77 /* CCCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EDA15D011FD7E7C300CF7A77 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EDA15D021FD7E7C300CF7A77 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EDA15D061FD7E7C300CF7A77 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87N2AEHWHH;
 				INFOPLIST_FILE = PageRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyang.PageRouter;
@@ -309,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87N2AEHWHH;
 				INFOPLIST_FILE = PageRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyang.PageRouter;
