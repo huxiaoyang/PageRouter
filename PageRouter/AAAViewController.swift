@@ -10,7 +10,7 @@ import UIKit
 
 class AAAViewController: UIViewController {
     
-    private var callback: PageRouter.Complated!
+    private var callback: Complated!
     
 
     override func viewDidLoad() {

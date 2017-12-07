@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
     private class func getCurrentWindow() -> UIWindow? {
         var window: UIWindow? = UIApplication.shared.keyWindow
@@ -69,7 +69,7 @@ extension UIViewController {
     }
     
     
-    class func topWindowController() -> UIViewController? {
+    public class func topWindowController() -> UIViewController? {
         
         guard let window = UIViewController.getCurrentWindow() else {
             return nil;

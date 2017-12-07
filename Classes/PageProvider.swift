@@ -14,15 +14,16 @@
 import UIKit
 
 
-typealias Complated = ([String : Any]) -> Void
+public typealias Complated = ([String : Any]) -> Void
 
 
 public class PageProvider<target: ControllerConvertible> {
+
+    public let callback = "PageProvider.callback"
     
-    let callback = "PageProvider.callback"
+    public init() {}
     
-    
-    func jump(
+    public func jump(
         from source: UIViewController? = UIViewController.topWindowController(),
         to router: target,
         with parameters: [String : Any] = [:],
