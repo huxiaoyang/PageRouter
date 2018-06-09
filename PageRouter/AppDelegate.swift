@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /// 在safair浏览器中输入『PageRouter://AAAViewController』
     /// 进入页面点击『close』，观察控制台打印的回调数据
     
-    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         
         let host = url.host
         guard let enumValue = host else {

@@ -12,9 +12,9 @@ public extension UIViewController {
     
     private class func getCurrentWindow() -> UIWindow? {
         var window: UIWindow? = UIApplication.shared.keyWindow
-        if let w = window, w.windowLevel != UIWindowLevelNormal {
+        if let w = window, w.windowLevel != UIWindow.Level.normal {
             for tempWindow in UIApplication.shared.windows {
-                if tempWindow.windowLevel == UIWindowLevelNormal  {
+                if tempWindow.windowLevel == UIWindow.Level.normal  {
                     window = tempWindow
                     break
                 }

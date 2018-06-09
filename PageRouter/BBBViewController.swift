@@ -18,11 +18,11 @@ class BBBViewController: UIViewController {
         
         let close = UIButton(type: .custom)
         close.frame = CGRect.init(x: 100, y: 300, width: 120, height: 50)
-        close.setTitle("close", for: .normal)
+        close.setTitle("close", for: UIControl.State.normal)
         close.backgroundColor = UIColor.red
         view.addSubview(close)
         
-        close.addTarget(self, action: #selector(close1), for: .touchUpInside)
+        close.addTarget(self, action: #selector(close1), for: UIControl.Event.touchUpInside)
         
     }
 

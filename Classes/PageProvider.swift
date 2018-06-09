@@ -69,11 +69,14 @@ public class PageProvider<target: ControllerConvertible> {
                 
                 nav.pushViewController(viewController, animated: true)
                 
-            case .present:
+            case .present(let parent):
                 
-                windowController.present(viewController, animated: true)
-                
-            case .presentWithParent(let parent):
+                guard let parent = parent else {
+                    
+                    windowController.present(viewController, animated: true)
+                    
+                    return
+                }
                 
                 let nav = parent.init(rootViewController: viewController)
                 

@@ -41,9 +41,9 @@ extension Router: ControllerConvertible {
         case .red:
             return .push
         case .yellow:
-            return .present
+            return .present(parent: nil)
         case .blue:
-            return .presentWithParent(UINavigationController.self)
+            return .present(parent: UINavigationController.self)
         }
         
     }

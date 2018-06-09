@@ -11,8 +11,7 @@ import UIKit
 /// 跳转方式
 public enum ControllerOperation {
     case push
-    case present
-    case presentWithParent(UINavigationController.Type)
+    case present(parent: UINavigationController.Type?)
 }
 
 
