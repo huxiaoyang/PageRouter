@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import RxSwift
+
 
 class ViewController: UIViewController {
+    
+    let disposeBag = DisposeBag()
+
     
     var tableView: UITableView!
     
@@ -72,7 +77,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        Page.jump(from: self, to: target)
+        Page.rx.jump(from: self, to: target)
+            .subscribe()
+            .disposed(by: disposeBag)
+
+        
+//        Page.jump(from: self, to: target) { dict in
+//
+//            print(dict)
+//
+//        }
         
     }
     

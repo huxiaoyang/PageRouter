@@ -17,11 +17,22 @@ import UIKit
 public typealias Complated = ([String : Any]) -> Void
 
 
-public class PageProvider<target: ControllerConvertible> {
+public protocol PageProviderType: AnyObject {
+    
+    associatedtype Target: ControllerConvertible
+    
+    func jump(from source: UIViewController?, to router: Target, with parameters: [String : Any], callBack handler: @escaping Complated)
+    
+}
+
+
+
+public class PageProvider<target: ControllerConvertible>: PageProviderType {
 
     public let callback = "PageProvider.callback"
     
     public init() {}
+    
     
     public func jump(
         from source: UIViewController? = UIViewController.topWindowController(),

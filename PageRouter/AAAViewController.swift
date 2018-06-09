@@ -41,6 +41,8 @@ class AAAViewController: UIViewController {
         
         self.callback(["key": "value"])
         
+        self.navigationController?.popViewController(animated: true)
+        
     }
 
 

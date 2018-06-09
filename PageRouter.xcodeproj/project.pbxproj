@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BE76BE20CBB99100CAA388 /* PageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE76BC20CBB99100CAA388 /* PageResponse.swift */; };
+		04BE76BF20CBB99100CAA388 /* PageRouter+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BE76BD20CBB99100CAA388 /* PageRouter+Rx.swift */; };
+		5E00B20B484A145493E9F808 /* Pods_PageRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7BD26F6E963B3BDB349D967 /* Pods_PageRouter.framework */; };
 		EDA15CFE1FD7E7C300CF7A77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15CFD1FD7E7C300CF7A77 /* AppDelegate.swift */; };
 		EDA15D001FD7E7C300CF7A77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA15CFF1FD7E7C300CF7A77 /* ViewController.swift */; };
 		EDA15D051FD7E7C300CF7A77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA15D041FD7E7C300CF7A77 /* Assets.xcassets */; };
@@ -21,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04BE76BC20CBB99100CAA388 /* PageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageResponse.swift; sourceTree = "<group>"; };
+		04BE76BD20CBB99100CAA388 /* PageRouter+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PageRouter+Rx.swift"; sourceTree = "<group>"; };
+		703CDD4485EDA7D66A73B586 /* Pods-PageRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageRouter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PageRouter/Pods-PageRouter.debug.xcconfig"; sourceTree = "<group>"; };
+		86B7E185297FA5056E7B8862 /* Pods-PageRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageRouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-PageRouter/Pods-PageRouter.release.xcconfig"; sourceTree = "<group>"; };
+		A7BD26F6E963B3BDB349D967 /* Pods_PageRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA15CFA1FD7E7C300CF7A77 /* PageRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA15CFD1FD7E7C300CF7A77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDA15CFF1FD7E7C300CF7A77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,17 +49,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E00B20B484A145493E9F808 /* Pods_PageRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BE76BB20CBB96900CAA388 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				04BE76BD20CBB99100CAA388 /* PageRouter+Rx.swift */,
+				04BE76BC20CBB99100CAA388 /* PageResponse.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		384AD7F021CE7D589B757242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				703CDD4485EDA7D66A73B586 /* Pods-PageRouter.debug.xcconfig */,
+				86B7E185297FA5056E7B8862 /* Pods-PageRouter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		576A4972825D6AD6D4B57569 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7BD26F6E963B3BDB349D967 /* Pods_PageRouter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EDA15CF11FD7E7C300CF7A77 = {
 			isa = PBXGroup;
 			children = (
 				EDA15CFC1FD7E7C300CF7A77 /* PageRouter */,
 				EDA15CFB1FD7E7C300CF7A77 /* Products */,
+				384AD7F021CE7D589B757242 /* Pods */,
+				576A4972825D6AD6D4B57569 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +120,7 @@
 		EDA15D0F1FD7E86B00CF7A77 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				04BE76BB20CBB96900CAA388 /* Rx */,
 				EDA15D141FD7E98400CF7A77 /* UIViewController+FindTop.swift */,
 				EDA15D101FD7E86B00CF7A77 /* PageRouter.swift */,
 				EDA15D111FD7E86B00CF7A77 /* PageProvider.swift */,
@@ -97,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA15D0C1FD7E7C400CF7A77 /* Build configuration list for PBXNativeTarget "PageRouter" */;
 			buildPhases = (
+				97D68141176FD1C827DAC880 /* [CP] Check Pods Manifest.lock */,
 				EDA15CF61FD7E7C300CF7A77 /* Sources */,
 				EDA15CF71FD7E7C300CF7A77 /* Frameworks */,
 				EDA15CF81FD7E7C300CF7A77 /* Resources */,
+				88C99361F63E964F08020B05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +197,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		88C99361F63E964F08020B05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PageRouter/Pods-PageRouter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageRouter/Pods-PageRouter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D68141176FD1C827DAC880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PageRouter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDA15CF61FD7E7C300CF7A77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -169,8 +250,10 @@
 				EDA15D151FD7E98400CF7A77 /* UIViewController+FindTop.swift in Sources */,
 				EDA15D171FD7F23300CF7A77 /* Router.swift in Sources */,
 				EDA15CFE1FD7E7C300CF7A77 /* AppDelegate.swift in Sources */,
+				04BE76BF20CBB99100CAA388 /* PageRouter+Rx.swift in Sources */,
 				EDA15D1B1FD7F3E700CF7A77 /* BBBViewController.swift in Sources */,
 				EDA15D1D1FD7F3EF00CF7A77 /* CCCViewController.swift in Sources */,
+				04BE76BE20CBB99100CAA388 /* PageResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +384,7 @@
 		};
 		EDA15D0D1FD7E7C400CF7A77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 703CDD4485EDA7D66A73B586 /* Pods-PageRouter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +400,7 @@
 		};
 		EDA15D0E1FD7E7C400CF7A77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B7E185297FA5056E7B8862 /* Pods-PageRouter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
